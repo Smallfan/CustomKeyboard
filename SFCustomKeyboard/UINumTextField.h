@@ -20,7 +20,7 @@ typedef int KeyBoardType;
 {
     __weak NSObject <UITextFieldDelegate>* _delegate;
     BOOL isNumKeyBoard;
-    BOOL isUppercaseString;  //add by tango 2014-06-08
+    BOOL isUppercaseString;
 }
 
 @property (nonatomic, strong) SFEnglishKeyboard *englishKey;
@@ -28,7 +28,7 @@ typedef int KeyBoardType;
 
 - (void)setDefinekeyBoardType:(KeyBoardType)KeyBoardType isCertificate:(BOOL)isCertificate;
 - (void)setDefinekeyBoardType:(KeyBoardType)KeyBoardType isDecimal:(BOOL)isDecimal;
-- (void)setUppercaseString:(BOOL) uppercaseString;//add by tango 2014-06-08
+- (void)setUppercaseString:(BOOL) uppercaseString;
 -(void)setAddSpaceString:(BOOL) isAddSpace;
 @end
-UIKIT_EXTERN NSString *const UITextFieldTextDidChangeNotification;//add by tango 2014-06-08
+UIKIT_EXTERN NSString *const UITextFieldTextDidChangeNotification;
